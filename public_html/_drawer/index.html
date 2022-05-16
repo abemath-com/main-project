@@ -1,0 +1,270 @@
+<html xmlns="http://www.w3.org/1999/xhtml" style="background-color: #000000;">
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Drawer</title>
+    
+    <script type="text/javascript" src="./dist/jquery-1.9.1.js.jquery"></script>
+    <script type="text/javascript" src="./dist/jquery-ui.js.jquery"></script>
+    <script type="text/javascript" src="./assets/assets.js"></script>
+
+    <link href="./assets/assets.css" type="text/css" rel="stylesheet">
+
+    <STYLE>
+.#div {
+  visibility:none;
+}
+
+.unmove {
+    cursor:none;
+}
+
+.visible-check {
+    visibility: hidden;
+}
+
+.check {
+    right: 0;
+    margin: 15px;
+}
+
+.slider {
+    appearance: initial;
+    background: #408080;
+    border-radius: 35px;
+    position: absolute;
+    height: 2px;
+    transform: rotate(225deg);
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 19px;
+  height: 20px;
+  border-radius: 100%;
+  background: url('icons/w.png');
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 19px;
+  height: 20px;
+  border-radius: 100%;
+  background: url('icons/w.png');
+  cursor: pointer;
+}
+
+.slider:hover, .slider:focus {
+  outline: none;
+}
+
+.height-1 {
+    background: #ff3e3e00;
+    color: white;
+    font-family: monospace;
+    border-color: #408080;
+    border-style: double;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    width: 50px;
+    margin-left: -66px;
+    margin-top: 50px;
+}
+
+.height-1:hover, .height-1:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.width-1 {
+    background: #ff3e3e00;
+    color: white;
+    font-family: monospace;
+    border-color: #408080;
+    border-style: double;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    width: 50px;
+    margin-left: -66px;
+    margin-top: 25px;
+}
+
+.width-1:hover, .width-1:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.id-0 {
+    background: #ff3e3e00;
+    color: white;
+    border-color: #ffffff;
+    border-style: dashed;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    position: absolute;
+    font-family: monospace;
+    text-transform: uppercase;
+    width: 50px;
+    margin-left: -66px;
+}
+
+.id-0:hover, .id-0:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+.hapus {
+  font-size: xx-large;
+  position: absolute;
+  color: white;
+  bottom: 100%;
+  text-decoration-line: none;
+  visibility: visible;
+}
+
+.canvas {
+  width: 87px;
+  height: 33px;
+  margin-left: 121px;
+  border: 2px;
+  border-style: solid;
+  border-color: #474080;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.panel-layer {
+    position: absolute;
+    margin: 16px;
+}
+
+.panel-info {
+    cursor: move;
+    background-color: rgb(0 0 0 / 0%);
+    font-family: monospace;
+    color: #ffffff;
+}
+
+.panel-information {
+    cursor: move;
+    background-color: rgb(0 0 0 / 0%);
+    font-family: monospace;
+    color: #ff0000;
+}
+
+.label {
+  font-family: monospace;
+  color:white;
+}
+
+.dark-mode {
+  background-color: white;
+  color:black;
+}
+
+.dark-w {
+  color:black;
+}
+
+.dark-h {
+  color:black;
+}
+
+.dark-p {
+  color:black;
+}
+
+.backTop {
+  color: black;
+  border-radius:100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: inline-block;  
+  padding: 1em;
+  margin: 1em;
+  background: #408080;
+}
+
+.backTop:hover {
+  cursor: pointer;
+}
+
+.backTop-5 {
+  color: black;
+  border-radius:100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+  display: inline-block;  
+  padding: 1em;
+  margin: 1em;
+  background: #408080;
+}
+.backTop-5:hover {
+  cursor: pointer;
+}
+
+.none {
+  visibility: none;
+}
+    </STYLE>
+
+</head>
+
+<body id="abemath">
+
+	<!--/* Layer accessibility editing on object */-->
+		<div id="sidenavMainMarkup">
+ 			<div id="sidenavMarkup" class="sidenavStylesheet">
+  				<a href="javascript:void(0)" class="sidenavStylesheetOpt" onclick="sidenavClose()">&times;</a>
+					</div>
+
+		<div id="sidenavObjectSheet">
+  			<span class="sidenavObjectSheet" onclick="sidenavOpen()">&#9776;</span>
+ 				</div>
+		</div>
+
+		<!--/* Geometry drafted section their such an arc, rectangle, circle, etc */-->
+			<div class="dropdown">
+    				<img src="icons/arc.png" style="width:45px;height:45px;" class="backtop-1" onclick="garis()">
+					<div class="dropdown-content">
+    						<img src="icons/arc.png" style="width:45px;height:45px;" class="backtop-1-drop" onclick="garis()">
+							<div class="drop-down">
+    								<img src="icons/arc.png" style="width:45px;height:45px;" class="backtop-1-drop" onclick="garis()">
+    								<img src="icons/arc.png" style="width:45px;height:45px;" class="backtop-1-drop" onclick="garis()">
+								<img src="icons/arc.png" style="width:45px;height:45px;" class="backtop-1-drop" onclick="garis()">
+
+    							</div>
+  					</div>
+			</div>
+
+    <img src="icons/rect.png" style="width:45px;height:45px;" class="backtop-2" onclick="kotak()">
+    <img src="icons/circle.png" style="width:45px;height:45px;" class="backtop-3" onclick="lingkaran()">
+    <img src="icons/circle.png" style="width:45px;height:45px;" class="backtop-4" onclick="semilingkaran()">
+
+    <img src="1.png" style="width:50px;height:50px;" class="backtop" onclick="change()">
+
+<div id="cookieok" style="position:absolute;/* right:5px; */bottom: 5px;border-radius:10px;background-color: #408080;padding:3px 8px;margin: 1em;font: 14px Arial;color: black;">Use drawer for your work easily. 
+    <div style="display:inline-block;border-radius: 10px;/* border: 1px white; *//* border-style: dashed; */background-color: #000;color: white;padding:3px 8px;cursor: pointer;" onclick="cookieok()">OK</div>
+
+</div>
+
+</body>
+
+</html>

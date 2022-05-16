@@ -1,0 +1,11 @@
+{
+    "name": "ABE",
+    "version": "1.0.0",
+    "ignore": [
+        ".jshintrc", "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}
