@@ -2,6 +2,10 @@
 /* All of these activity on our responsible and code or all of my property which privately coded already in creative common license. */
 /* Any use can be allowed without permission or permission itself. */
 
+	// import * as testCatch from "/utilities/handler.js";
+	
+	// document.getElementById("demo").innerHTML = testCatch.test();
+
 	// document.body set attribute overflow hidden
             $(function () {
   	    $('body').css({
@@ -15,21 +19,6 @@
 	    $(".tarik-objek").draggable({
 	      snap: '.garis'});
 	    });
-
-	// Grid javascript code, so doesn't do in hypertext
-	function documentLine() {
-	var documentGrid = document.createElement("div");
-	var documentLeftValue = 0x20 - 2;
-	var documentGridOpt = 'style=' + '"' + 'top:' + documentLeftValue + 'px;'
-					+ 'width:' + '1' + 'px;' + 'height:' + '100' + '%'
-					+ 'display:' + 'block' + '"';
-		documentGrid
-			.setAttribute("class", "garis");
-		documentGrid
-			.setAttribute("style", documentGridOpt);
-
-		document.body.appendChild(documentLine);
-	}
 
 /* Arc object, base object 23px since additional object was 30px, multiply additional object after base object counted then obtain calculated arc. */
 function garis() {
@@ -1752,8 +1741,6 @@ function push() {
 		.removeChild(document.getElementById("msg"));
         document.body
 		.removeChild(document.getElementById("overlay"));
-
-	documentLine();
 }
 
 window.onload=function() {
